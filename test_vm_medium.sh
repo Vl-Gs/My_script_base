@@ -1,3 +1,12 @@
+# This Bash script sets up a Vagrant environment with multiple virtual machines (VMs) using the Ubuntu 18.04 (Bionic) base box. It performs the following tasks:
+
+# 1. Checks if an SSH key for the VMs already exists, and generates a new one if it doesn't.
+# 2. Creates a directory for the Vagrant machines and generates a Vagrantfile that configures the VMs.
+# 3. Provisions the VMs with the generated SSH public key and creates a user account for each VM with the username "test{i}", where {i} is the machine number.
+# 4. Starts the VMs in parallel and checks their status.
+# @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+
 #!/bin/bash
 
 # Initial configurations
